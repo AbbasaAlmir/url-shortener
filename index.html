@@ -12,20 +12,81 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap%27");
+
     .attribution {
       font-size: 11px;
     }
 
+    .a6b::placeholder {
+       color: hsl(0, 87%, 67%);
+      }
+
     body{
       color: hsl(180, 66%, 49%);
+      font-size: 18px;
+      font-family: "Poppins";
+      font-weight: 500;
     }
 
-    .Red{
+    .coloring li a{
+      text-decoration: none;
+      color: hsl(0, 0%, 75%);
+    }
+
+    .coloring li a:hover{
+      color:black;
+    }
+
+    .coloring li{
+        margin-left: 2rem;
+        list-style-type: none;
+    }
+
+    .coloring{
+      font-weight:bold;
+      display: flex;
+    }
+
+    .grayColor a{
+      padding: 1rem;
+      border-radius: 10%/50%;
+      width: 400px;
+      background: transparent;
+      padding: 8px;
+    }
+
+    .grayColor2 a{
+      padding: 1rem;
+      border-radius: 10%/50%;
+      width: 400px;
+      background: transparent;
+      padding: 8px;
+    }
+
+    .grayColor:hover a{
+      color: white;
+      background-color: cyan;
+    }
+
+    .grayColor2:hover a{
+      color: white;
+      color: hsl(257, 7%, 63%)
+      background-color: cyan;
+    }
+
+    #red{
       color: hsl(0, 87%, 67%);
     }
 
-    h1,h3{
+    h1,h2,h3{
       color: hsl(257, 27%, 26%);
+      font-weight:bold;
+    }
+
+    h3{
+      font-size: 30px;
     }
 
     .attribution a {
@@ -36,22 +97,23 @@
 </head>
 
 <body >
-  <nav class="navbar navbar-expand-sm navbar-light bg-primary" 
-    <ul>
-      <li><a href="index.html">Logo</a></li>
+  <nav class="navbar navbar-expand-sm navbar-light bg-primary">
+    <ul class= "coloring">
+      <li><a href="index.html"><img src="./images\logo.svg" /></a></li>
       <li><a href="#features">Features </a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#resources">Resources</a></li>
-      <li><a href="login.html">Login</a></li>
-      <li><a href="signup.html">Sign Up</a></li>
-
+      <div style= "display: flex; padding-left: 60rem;">
+      <li class= "grayColor"><a href="login.html">Login</a></li>
+      <li class= "grayColor2"><a href="signup.html">Sign Up</a></li>
+    </div>
     </ul>
   </nav>
 
   <main>
     <section>
       <header>
-        <h1>
+        <h1 style= "font-size: 60px">
           More than just shorter links
         </h1>
       </header>
@@ -63,13 +125,13 @@
     </section>
     <section>
       <form action="#">
-        <input class= "Red" type="url" placeholder="Shorten a link here...">
+        <input type="url" class= "a6b" placeholder="Shorten a link here...">
         <input type="submit" value="  Shorten It!">
       </form>
     </section>
     <section id="features">
       <header>
-        <h2>
+        <h2 style= "font-size: 50px">
           Advanced Statistics
         </h2>
         <p>Track how your links are performing across the web with our
